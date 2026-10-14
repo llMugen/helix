@@ -1,0 +1,10 @@
+theme = "overrides_catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+
+[editor.soft-wrap]
+# Softwrap disabled globally, but enabled per language in languages.toml
+enable = false
+wrap-at-text-width = true
+wrap-indicator = ""

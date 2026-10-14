@@ -1,0 +1,16 @@
+inherits = "catppuccin_mocha"
+
+"ui.cursor.primary.insert" = { fg = "black", bg = "Mauve"}
+"constant" = { fg = "Sapphire"}
+"punctuation" = { fg = "Text"}
+"markup.bold" = { fg = "Red" }
+"markup.italic" = { fg = "Yellow"}
+"string" = { fg = "Teal" }
+
+[palette]
+Red = "#d20f39"
+Sapphire = "#74c7ec"
+Yellow = "#f9e2af"
+Mauve = "#cba6f7"
+Teal = "#94e2d5"
+Text = "#a6adc8"

@@ -1,0 +1,50 @@
+##
+# LSPs are configured by default in Helix, but these are settings I want to override.
+##
+
+##
+# C/C++
+##
+[language-server.clangd]
+command = "clangd"
+# --query-driver whitelists compilers that can be used. They still need to be part of compile_commands.json
+args = ["--query-driver=/usr/bin/g++,/usr/bin/clang++,/usr/local/vitasdk/bin/arm-vita-eabi-*"]
+
+[[language]]
+name = "cpp"
+language-servers = [ "clangd" ]
+indent = { tab-width = 4, unit = "    "}
+soft-wrap.enable = true
+
+[[language]]
+name = "c"
+language-servers = [ "clangd" ]
+indent = { tab-width = 4, unit = "    "}
+soft-wrap.enable = true
+
+##
+# GOLANG
+##
+[[language]]
+name = "go"
+auto-format = true
+# Changed default to goimports for autoimports.
+formatter = { command = "goimports" }
+indent = { tab-width = 4, unit = "    " }
+soft-wrap.enable = true
+
+##
+# LATEX
+##
+[[language]]
+name = "latex"
+soft-wrap.enable = true
+
+[language-server.texlab.config.texlab.build]
+executable = "lualatex"
+onSave = true
+forwardSearchAfter = true
+
+[language-server.texlab.config.texlab.forwardSearch]
+executable = "/Applications/Skim.app/Contents/SharedSupport/displayline"
+args = ["-g", "%l", "%p", "%f"]
