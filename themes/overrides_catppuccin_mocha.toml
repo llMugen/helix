@@ -6,11 +6,13 @@ inherits = "catppuccin_mocha"
 "markup.bold" = { fg = "Red" }
 "markup.italic" = { fg = "Yellow"}
 "string" = { fg = "Teal" }
+"variable.parameter" = { fg = "LightRed" }
 
 [palette]
 Red = "#d20f39"
 Sapphire = "#74c7ec"
 Yellow = "#f9e2af"
+LightRed = "#e78284"
 Mauve = "#cba6f7"
 Teal = "#94e2d5"
 Text = "#a6adc8"
